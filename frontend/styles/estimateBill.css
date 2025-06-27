@@ -1,0 +1,143 @@
+/* Background for the whole page */
+body {
+  background: url('/ashok.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container for the Estimate Bill Form */
+.estimate-bill-form {
+  max-width: 900px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Style */
+.estimate-bill-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.estimate-bill-form h3 {
+  margin-top: 25px;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+/* Input fields */
+.estimate-bill-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f9f9f9;
+}
+
+/* Table container for items */
+.table-row,
+.tax-summary-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.estimate-bill-form h3 {
+  margin-top: 35px; /* Increased spacing above */
+  margin-bottom: 10px;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+/* Each row has margin for separation */
+.table-row,
+.tax-summary-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px; /* More space between rows */
+}
+
+/* Flexible input sizing for table rows */
+.table-row input,
+.tax-summary-row input {
+  flex: 1 1 100px;
+  min-width: 120px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+/* Tax summary responsiveness */
+.tax-summary-row {
+  flex-wrap: wrap; /* For responsive layout on small screens */
+  margin-bottom: 10px;
+}
+
+/* Add Row and Download PDF buttons */
+.add-row-btn,
+.download-btn,
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.add-row-btn:hover,
+.download-btn:hover,
+button:hover {
+  background: linear-gradient(45deg, #0056b3, #007bff);
+}
+
+/* Footer inputs like Amount in Words, Declaration */
+.footer-input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Center the main heading */
+.estimate-bill-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Responsive: make form mobile-friendly */
+@media (max-width: 600px) {
+  .table-row,
+  .tax-summary-row {
+    flex-direction: column;
+  }
+}
+.section-box {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}

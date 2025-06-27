@@ -1,0 +1,64 @@
+/* signup.css */
+
+body {
+  background: url('/ashok.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signup-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.signup-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.signup-container input:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.4);
+}
+
+.signup-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #28a745, #218838);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-container button:hover {
+  background: linear-gradient(45deg, #218838, #28a745);
+}
+
+.signup-container p {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.signup-container a {
+  color: #28a745;
+  text-decoration: none;
+}
