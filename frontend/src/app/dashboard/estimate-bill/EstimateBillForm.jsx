@@ -114,7 +114,7 @@ export default function EstimateBillForm() {
 
   const generatePDF = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/estimatebill/pdf", {
+      const res = await fetch("${process.env.NEXT_PUBLIC_API_URL}/api/estimatebill/pdf", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, taxSummary })
